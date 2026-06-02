@@ -66,9 +66,34 @@
   .foot{ margin-top:24px; color:#8b93a1; font-size:12.5px; line-height:1.7; }
   .foot b{ color:#c9d1da; }
   .foot .warn{ color:#ffc46b; }
+
+  /* Mobile desktop-only block */
+  .mobile-block{ display:none; }
+  @media print {
+    .mobile-block{ display:none !important; }
+    body > *:not(.mobile-block){ display:revert !important; }
+  }
+  @media screen and (max-width: 900px) {
+    .mobile-block{
+      display:flex !important;
+      position:fixed; inset:0; z-index:9999;
+      background:#0e1116;
+      flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; padding:40px;
+    }
+    body > *:not(.mobile-block){ display:none !important; }
+  }
 </style>
 </head>
 <body>
+
+<!-- MOBILE BLOCK -->
+<div class="mobile-block">
+  <div style="font-size:52px;margin-bottom:24px;">💻</div>
+  <h2 style="color:#5b8dff;font-size:22px;font-weight:800;margin-bottom:12px;">Please open on desktop</h2>
+  <p style="color:rgba(255,255,255,0.6);font-size:15px;line-height:1.7;max-width:320px;">This roadmap is designed for laptop and desktop viewing.<br><br>Please open this link on a computer for the full experience.</p>
+</div>
+
 <div class="wrap">
 
   <div class="head">
