@@ -25,7 +25,7 @@
   .def b{ color:#5b8dff; }
 
   /* KPI cards */
-  .kpis{ display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:30px; }
+  .kpis{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:30px; }
   .kpi{ background:linear-gradient(160deg,#1b2230,#141922); border:1px solid #2a3340; border-radius:14px; padding:18px 16px; text-align:center; }
   .kpi .n{ font-size:25px; font-weight:800; color:#fff; }
   .kpi .n.green{ color:#46d68a; }
@@ -101,15 +101,7 @@
     <p>Every system, every agent, the headcount it replaces — and the exact date your company becomes AI-first.</p>
   </div>
 
-  <div class="defs">
-    <div class="def"><b>Project</b> = one fully automated department</div>
-    <div class="def"><b>Block</b> = 1 week = <b>22.5h</b></div>
-    <div class="def">4 Blocks / month = <b>90h</b> (per contract)</div>
-    <div class="def">6 months = <b>540h</b> = 24 Blocks</div>
-  </div>
-
   <div class="kpis">
-    <div class="kpi"><div class="n">540h</div><div class="l">Total build hours<br>(= exact contract)</div></div>
     <div class="kpi"><div class="n">7</div><div class="l">Departments<br>fully automated</div></div>
     <div class="kpi"><div class="n green">10+</div><div class="l">Roles replaced or<br>never-hired</div></div>
     <div class="kpi"><div class="n green">~€30K/mo</div><div class="l">Employee cost saved*<br>(~€360K / year)</div></div>
@@ -126,13 +118,12 @@
         <th>Why It Takes This Long</th>
         <th>Replaces / Avoids Hiring</th>
         <th class="c">Employee Cost<br>Saved / mo*</th>
-        <th class="c">Automated By</th>
       </tr>
     </thead>
     <tbody>
 
       <!-- MARKETING -->
-      <tr class="deptrow" style="background:#d65b54;"><td colspan="7"><span class="dot" style="background:#fff;"></span>MARKETING — 6 weeks · 135h · fully automated by <b>Jul 6</b></td></tr>
+      <tr class="deptrow" style="background:#d65b54;"><td colspan="6"><span class="dot" style="background:#fff;"></span>MARKETING — 6 weeks · 135h · fully automated</td></tr>
       <tr>
         <td class="macro">Marketing Strategy<br><span style="font-weight:400;font-size:11px;color:#8b93a1;">(the foundation)</span></td>
         <td class="builds"><ul>
@@ -146,7 +137,6 @@
         <td class="why">Research + brand &amp; content strategy condensed into one focused week — the foundation every agent below is built on.</td>
         <td class="roles">Marketing strategist / agency strategy retainer <span class="fte">1 FTE</span></td>
         <td class="cost">€3,000<small>/month</small></td>
-        <td class="date">Jun 5</td>
       </tr>
       <tr>
         <td class="macro">Marketing Agentic Infrastructure</td>
@@ -162,11 +152,10 @@
         <td class="why">The real build: 6 connected agents (idea → write → design → video → publish → analyze), each engineered, integrated and tested over 5 weeks. The heaviest block in marketing.</td>
         <td class="roles">Copywriter + designer + video editor <span class="fte">2 FTE</span></td>
         <td class="cost">€5,000<small>/month</small></td>
-        <td class="date">Jul 6 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- LEADERSHIP -->
-      <tr class="deptrow" style="background:#8abf3f;"><td colspan="7"><span class="dot" style="background:#fff;"></span>LEADERSHIP — 3 weeks · 67.5h · fully automated by <b>Jul 27</b></td></tr>
+      <tr class="deptrow" style="background:#8abf3f;"><td colspan="6"><span class="dot" style="background:#fff;"></span>LEADERSHIP — 3 weeks · 67.5h · fully automated</td></tr>
       <tr>
         <td class="macro">Unified Workspace + Decision Engine</td>
         <td class="builds"><ul>
@@ -178,7 +167,6 @@
         <td class="why">Migrating + merging 5 tools into one without losing data, then building the decision→task agent on top. The migration is the slow part.</td>
         <td class="roles">Ops coordinator / project manager <span class="fte">1 FTE</span></td>
         <td class="cost">€2,800<small>/month</small></td>
-        <td class="date">Jul 20</td>
       </tr>
       <tr>
         <td class="macro">Leadership Dashboard + Tools Audit</td>
@@ -190,11 +178,10 @@
         <td class="why">One dashboard wired to live data + a full audit of 30+ tools to cut overlap. Mostly the audit + integrations.</td>
         <td class="roles">Redundant SaaS subscriptions cut <span class="fte">tool spend</span></td>
         <td class="cost">€2,000<small>/month</small></td>
-        <td class="date">Jul 27 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- FINANCES -->
-      <tr class="deptrow" style="background:#3fb56e;"><td colspan="7"><span class="dot" style="background:#fff;"></span>FINANCES — 2 weeks · 45h · fully automated by <b>Aug 10</b></td></tr>
+      <tr class="deptrow" style="background:#3fb56e;"><td colspan="6"><span class="dot" style="background:#fff;"></span>FINANCES — 2 weeks · 45h · fully automated</td></tr>
       <tr>
         <td class="macro">Finance Dashboard</td>
         <td class="builds"><ul>
@@ -206,7 +193,6 @@
         <td class="why">Building the live data pipeline + customizable report views that update on demand.</td>
         <td class="roles">Financial analyst / reporting <span class="fte">0.5 FTE</span></td>
         <td class="cost">€1,500<small>/month</small></td>
-        <td class="date">Aug 3</td>
       </tr>
       <tr>
         <td class="macro">AI CFO Assistant</td>
@@ -219,11 +205,10 @@
         <td class="why">Training the agent on your financial data + building the alert / anomaly logic.</td>
         <td class="roles">Bookkeeper / finance assistant <span class="fte">0.5 FTE</span></td>
         <td class="cost">€1,500<small>/month</small></td>
-        <td class="date">Aug 10 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- SALES -->
-      <tr class="deptrow" style="background:#7b6ee0;"><td colspan="7"><span class="dot" style="background:#fff;"></span>SALES — 3 weeks · 67.5h · fully automated by <b>Aug 31</b></td></tr>
+      <tr class="deptrow" style="background:#7b6ee0;"><td colspan="6"><span class="dot" style="background:#fff;"></span>SALES — 3 weeks · 67.5h · fully automated</td></tr>
       <tr>
         <td class="macro">P2P / Webinar Strategy</td>
         <td class="builds"><ul>
@@ -234,7 +219,6 @@
         <td class="why">Designing the full acquisition system + building the automated webinar funnel.</td>
         <td class="roles">Sales / growth strategist <span class="fte">0.5 FTE</span></td>
         <td class="cost">€1,500<small>/month</small></td>
-        <td class="date">Aug 17</td>
       </tr>
       <tr>
         <td class="macro">Sales Support Agents</td>
@@ -247,7 +231,6 @@
         <td class="why">A multi-step qualify → follow-up → close workflow, wired to your CRM.</td>
         <td class="roles">SDR / sales assistant <span class="fte">1 FTE</span></td>
         <td class="cost">€2,500<small>/month</small></td>
-        <td class="date">Aug 24</td>
       </tr>
       <tr>
         <td class="macro">Community Engagement Agent</td>
@@ -259,11 +242,10 @@
         <td class="why">Engagement agent trained on your brand voice + sentiment logic to surface opportunities.</td>
         <td class="roles">Community manager <span class="fte">1 FTE</span></td>
         <td class="cost">€2,000<small>/month</small></td>
-        <td class="date">Aug 31 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- LEGAL -->
-      <tr class="deptrow" style="background:#df8f4a;"><td colspan="7"><span class="dot" style="background:#fff;"></span>LEGAL — 2 weeks · 45h · fully automated by <b>Sep 14</b></td></tr>
+      <tr class="deptrow" style="background:#df8f4a;"><td colspan="6"><span class="dot" style="background:#fff;"></span>LEGAL — 2 weeks · 45h · fully automated</td></tr>
       <tr>
         <td class="macro">AI Compliance Agent<br><span style="font-weight:400;font-size:11px;color:#8b93a1;">(the Compliance Robot)</span></td>
         <td class="builds"><ul>
@@ -275,7 +257,6 @@
         <td class="why">Continuous monitoring across site, software and legal docs + the alerting / risk-scoring engine.</td>
         <td class="roles">Compliance officer / external monitoring <span class="fte">0.5 FTE</span></td>
         <td class="cost">€2,000<small>/month</small></td>
-        <td class="date">Sep 7</td>
       </tr>
       <tr>
         <td class="macro">Contracts Creation &amp; Mgmt Agent</td>
@@ -288,11 +269,10 @@
         <td class="why">Templated drafting + a clause-risk review engine + lifecycle tracking.</td>
         <td class="roles">Paralegal / external legal drafting <span class="fte">0.5 FTE</span></td>
         <td class="cost">€1,800<small>/month</small></td>
-        <td class="date">Sep 14 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- SUPPORT -->
-      <tr class="deptrow" style="background:#5b94e0;"><td colspan="7"><span class="dot" style="background:#fff;"></span>SUPPORT — 2 weeks · 45h · fully automated by <b>Sep 28</b></td></tr>
+      <tr class="deptrow" style="background:#5b94e0;"><td colspan="6"><span class="dot" style="background:#fff;"></span>SUPPORT — 2 weeks · 45h · fully automated</td></tr>
       <tr>
         <td class="macro">Discovery Call Support Team</td>
         <td class="builds"><ul>
@@ -304,7 +284,6 @@
         <td class="why">Three linked automations — pre-call, live, post-call — synced into the CRM.</td>
         <td class="roles">Sales support assistant <span class="fte">0.5 FTE</span></td>
         <td class="cost">€1,500<small>/month</small></td>
-        <td class="date">Sep 21</td>
       </tr>
       <tr>
         <td class="macro">Support Agents</td>
@@ -317,11 +296,10 @@
         <td class="why">A 24/7 agent on Chatwoot + a trained knowledge base + escalation routing rules.</td>
         <td class="roles">1–2 support reps (24/7 coverage) <span class="fte">1.5 FTE</span></td>
         <td class="cost">€3,000<small>/month</small></td>
-        <td class="date">Sep 28 <br><span class="badge">DEPT DONE</span></td>
       </tr>
 
       <!-- DEVELOPMENT -->
-      <tr class="deptrow" style="background:#d9be3f;"><td colspan="7"><span class="dot" style="background:#fff;"></span>DEVELOPMENT — 6 weeks · 135h · AI components delivered by <b>Nov 9</b> &nbsp;<span style="font-weight:600;font-size:12px;opacity:.9;">(AI components inside PAILOT — not department automation)</span></td></tr>
+      <tr class="deptrow" style="background:#d9be3f;"><td colspan="6"><span class="dot" style="background:#fff;"></span>DEVELOPMENT — 6 weeks · 135h · AI components delivered &nbsp;<span style="font-weight:600;font-size:12px;opacity:.9;">(AI components inside PAILOT — not department automation)</span></td></tr>
       <tr>
         <td class="macro">Web App AI Components Audit</td>
         <td class="builds"><ul>
@@ -332,7 +310,6 @@
         <td class="why">Mapping exactly where AI fits in the app + scoping feasibility before any code is written.</td>
         <td class="roles">Product / AI consultant scoping <span class="fte">0.5 FTE</span></td>
         <td class="cost rev">PAILOT<small>revenue</small></td>
-        <td class="date">Oct 5</td>
       </tr>
       <tr>
         <td class="macro">Web App Launch Strategy</td>
@@ -344,7 +321,6 @@
         <td class="why">A full go-to-market + positioning plan for the PAILOT launch.</td>
         <td class="roles">GTM / launch strategist <span class="fte">0.5 FTE</span></td>
         <td class="cost rev">PAILOT<small>revenue</small></td>
-        <td class="date">Oct 12</td>
       </tr>
       <tr>
         <td class="macro">Development of Web App AI Components</td>
@@ -357,7 +333,6 @@
         <td class="why">The heaviest technical lift: actually building, integrating, testing and deploying AI features into production.</td>
         <td class="roles">AI / ML developer <span class="fte">1 FTE</span></td>
         <td class="cost rev">PAILOT<small>revenue engine</small></td>
-        <td class="date">Nov 9 <br><span class="badge">DELIVERED</span></td>
       </tr>
 
       <!-- GRAND TOTAL -->
@@ -368,7 +343,6 @@
         <td>The hours come straight from the weeks on your roadmap — nothing invented.</td>
         <td>10+ roles replaced or never-hired</td>
         <td class="cost">~€30K/mo<small style="color:#9aa4b0;">~€360K / year</small></td>
-        <td class="date" style="color:#fff;">Nov 9, 2026</td>
       </tr>
 
     </tbody>
@@ -376,7 +350,7 @@
   </div>
 
   <div class="foot">
-    <p><b>How to read this:</b> Each department is one <b>Project</b> (your definition). Each Project is delivered in <b>Blocks</b> — 1 Block = 1 week = 22.5 hours = one of the 4 monthly slots in the contract. Add every Block: <b>24 Blocks = 540 hours = exactly the 6-month agreement.</b> The "Why It Takes This Long" column shows where each hour goes, so the time is never a black box.</p>
+    <p><b>How to read this:</b> Each macro solution is delivered in <b>Blocks</b> — 1 Block = 1 week = 22.5 hours of focused build. The <b>"Why It Takes This Long"</b> column shows exactly where every hour goes, so the time is never a black box. Final project definitions and the build order are set together with you in the contract annex — the hours here are our estimate of the effort each piece takes.</p>
     <p style="margin-top:10px;">* <b>Employee-cost figures are conservative estimates</b> of the roles this work replaces — <b>or the roles you avoid having to hire</b> as you scale. They're based on typical EU costs and meant to be tuned to your actual / planned payroll together. <span class="warn">Development (135h) is the one exception to "department automated": it is the creation of AI components inside the PAILOT web app — a revenue driver, not a department being automated — so it's marked as PAILOT revenue rather than headcount saved.</span></p>
   </div>
 
